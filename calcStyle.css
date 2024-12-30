@@ -1,0 +1,41 @@
+   .ButtonStyle {
+     background-color: #0E151C;
+     /* Green */
+     /* border: none; */
+     border-radius: 50%;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     text-decoration: none;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-color: white;
+   }
+
+   .calc-screen {
+     margin: 20px 15px;
+   }
+
+
+
+   .calc-body {
+
+     background-color: black;
+     width: 300px;
+
+   }
+
+   .calc-layout {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: blanchedalmond;
+   }
+   .calc-button-row{
+    margin: 20px 25px;
+   }
+   .spl-icon{
+    padding: 20px 14px;
+   }

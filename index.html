@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./calcStyle.css">
+
+
+
+</head>
+<body>
+    <div class="calc-layout">
+    <h1 class="mt-5" style="text-align: center;color: black;">Calculator</h1>
+    <div class="calc-body mt-5">
+        
+        <!-- Calculator display screen-->
+         
+         <div class="calc-screen">
+            <div id="calc-typed">
+                <input placeholder="0" id="result" type="text" class="form-control" readonly>
+            </div>
+         </div>
+
+
+         <!-- Calculator Buttons-->
+          <div class="calc-button-row">
+
+            <button id="seven" onclick="display('7')" class="ButtonStyle">7</button>
+            <button id="eight" onclick="display('8')" class="ButtonStyle">8</button>
+            <button id="nine" onclick="display('9')" class="ButtonStyle">9</button>
+            <button id="mul" onclick="display('*')" class="ButtonStyle" >&#215;</button>
+            <button id="four" onclick="display('4')" class="ButtonStyle">4</button>
+            <button id="five" onclick="display('5')" class="ButtonStyle">5</button>
+            <button id="six" onclick="display('6')" class="ButtonStyle">6</button>
+            <button id="sub" onclick="display('-')" class="ButtonStyle">&#8722;</button>
+            <button id="one" onclick="display('1')" class="ButtonStyle">1</button>
+            <button id="two" onclick="display('2')" class="ButtonStyle">2</button>
+            <button id="three" onclick="display('3')" class="ButtonStyle">3</button>
+            <button id="add" onclick="display('+')" class="ButtonStyle">&#43;</button>
+            <button id="zero" onclick="display('0')" class="ButtonStyle">0</button>
+            <button id="div" onclick="display('/')" class="ButtonStyle">&#247;</button>
+            <button id="equal" onclick="exprEval()" class="opt ButtonStyle">&#61;</button>
+            <button id="del" onclick="removeLast()" class="ButtonStyle spl-icon">&#9003;</button>
+            <button id="ac" class="ButtonStyle spl-icon" onclick="resetResult()">AC</button>
+
+          </div>
+        
+    </div>
+</div>
+</body>
+<script src="./main.js"></script>
+</html>
